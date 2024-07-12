@@ -17,7 +17,7 @@ export default function Home() {
           { name: "Experience", link: "#experience" },
           { name: "Skills", link: "#skills" },
           { name: "Projects", link: "#projects" },
-          { name: "Contacts", link: "#contact" },
+          { name: "Contacts", link: "#contacts" },
         ]}/>
         <Hero/>  
         <MyTimeline/> 
