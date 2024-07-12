@@ -42,7 +42,7 @@ function Contacts() {
     }, [isSubmitted]);
 
     return (
-        <motion.div id='contacts' className="pt-20" initial={{
+        <motion.div  className="pt-20" initial={{
             opacity: 0,
         }}
             whileInView={{
@@ -53,7 +53,7 @@ function Contacts() {
                 }
             }}
             viewport={{ once: false }}>
-            <h1 className="heading">Let&apos;s <span className="text-purple">Connect</span></h1>
+            <h1 className="heading" id='contacts'>Let&apos;s <span className="text-purple">Connect</span></h1>
             <div className="max-w-md w-full mx-auto border-2 border-purple rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-white dark:bg-black-100 mt-14 hover:bg-black-100">
 
                 <div className="justify-center items-center">
