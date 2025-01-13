@@ -1,19 +1,9 @@
 "use client";
 import { motion } from 'framer-motion';
 import React from 'react';
+import skills from './skills.json';
 
 const Skills = () => {
-    const skills = [
-        { title: 'Python' },
-        { title: 'Java' },
-        { title: 'Machine Learning' },
-        { title: 'Deep Learning' },
-        { title: 'NLP' },
-        { title: 'Large Language Models' },
-        { title: 'React.js' },
-        { title: 'MongoDB' },
-    ];
-
     return (
         <motion.div id='skills' className="pt-40" initial={{
             opacity: 0,
