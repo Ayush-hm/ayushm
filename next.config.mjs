@@ -3,7 +3,7 @@ const nextConfig = {
     images: {
         domains: ['github.com', 'cdn.example.com', 'bf.kendal.org', 'images.unsplash.com'],
     },
-    basePath: "/app",
+    basePath: "/my-app",
     output: "export",  
     reactStrictMode: true,
 };
