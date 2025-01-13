@@ -15,14 +15,14 @@ const panelsData = [
     {
         category: "Gaming Accessories",
         title: "Nexus Gear",
-        imageUrl: "/NexusGear.png",
+        imageUrl: "NexusGear.png",
         description: "One-stop solution for all gaming accessories.",
         githubLink: "https://github.com/Ayush-hm/Nexus-Gear",
     },
     {
         category: "Restaurant Website",
         title: "Savoura",
-        imageUrl: "/Savoura.png",
+        imageUrl: "Savoura.png",
         description:
             "Website for a restaurant specializing in Mediterranean cuisine.",
         githubLink: "https://github.com/Ayush-hm/Savoura",
@@ -30,7 +30,7 @@ const panelsData = [
     {
         category: "Wearable Tech",
         title: "nVision",
-        imageUrl: "/TechVI.png",
+        imageUrl: "TechVI.png",
         description:
             "A wearable device that helps the visually impaired navigate their surroundings.",
         githubLink: "https://github.com/Ayush-hm/nVision",
@@ -38,14 +38,14 @@ const panelsData = [
     {
         category: "News Aggregator",
         title: "NewsWave",
-        imageUrl: "/NewsWave.png",
+        imageUrl: "NewsWave.png",
         description: "Stay informed, all sources, one feed.",
         githubLink: "https://github.com/Ayush-hm/NewsWave",
     },
     {
         category: "E-commerce", 
         title: "HoloDrive",
-        imageUrl: "/HoloDrive.png",
+        imageUrl: "HoloDrive.png",
         description: "A futuristic AR based Car Dashboard.",
         githubLink: "https://github.com/Ayush-hm/HoloDrive",
     }
