@@ -4,7 +4,7 @@ const nextConfig = {
         domains: ['github.com', 'cdn.example.com', 'bf.kendal.org', 'images.unsplash.com'],
     },
     basePath: "/app",
-    // output: "standalone",  
+    output: "export",  
     reactStrictMode: true,
 };
 
