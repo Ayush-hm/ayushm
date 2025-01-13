@@ -1,38 +1,32 @@
 import React from 'react';
-import Experience from './Experience'; // Assuming Experience is in a separate file
-import VWlogo from '@/public/VWlogojpg.jpg'
-import { StaticImageData } from 'next/image';
-
-interface Experience {
-    title: string;
-    subtitle: string;
-    description: string;
-    logo: StaticImageData;
-}
-
-const experiences: Experience[] = [
-    {
-        title: 'Software Engineer Trainee',
-        subtitle: 'Volkswagen Group Technology Solutions India',
-        description: 'Developed chatbots leveraging Large Language Models (LLMs) to provide users with engaging and informative conversational experiences.',
-        logo: VWlogo,
-    },
-    // Add more experience objects here
-];
+import Experience from './Experience';
+import experiences from './experiences.json'; // Import the JSON data
 
 const MyTimeline = () => {
     return (
-        <div className="timeline pt-10 flex justify-center">
-            
-            {experiences.map((experience) => (
-                <Experience
-                    key={experience.title} 
-                    title={experience.title}
-                    subtitle={experience.subtitle}
-                    description={experience.description}
-                    logo={experience.logo}
-                />
-            ))}
+        <div id="experience" className="pt-20">
+            <h1 className="heading text-center">
+                My <span className="text-purple">Experience</span>
+            </h1>
+            <div className="timeline pt-10 flex flex-col items-center gap-y-10 relative">
+                <div className="absolute left-[calc(24.4%+8.12%)] w-0.5 h-full bg-gray-300 z-0 hidden lg:block"></div>
+                {experiences.map((experience, index) => {
+                    const isContinued =
+                        index > 0 && experiences[index - 1].subtitle === experience.subtitle;
+                    return (
+                        <Experience
+                            key={index}
+                            title={experience.title}
+                            subtitle={experience.subtitle}
+                            description={experience.description}
+                            logo={experience.logo}
+                            showLogo={!isContinued} // Show logo only if not continued
+                            isLast={index === experiences.length - 1}
+                            marginClass={isContinued ? 'ml-28' : 'ml-2'} // Pass margin class
+                        />
+                    );
+                })}
+            </div>
         </div>
     );
 };
