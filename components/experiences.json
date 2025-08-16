@@ -13,7 +13,7 @@
         "location":"Pune",
         "startDate": "2023-12-31",
         "endDate": "2024-06-30",
-        "logo": "/VWlogojpg.jpg"
+        "logo": "VWlogojpg.jpg"
     },
     {
         "title": "Software Engineer",
@@ -29,6 +29,6 @@
         "location":"Bengaluru",
         "startDate": "2024-06-01",
         "endDate": "Present",
-        "logo": "/VWlogojpg.jpg"
+        "logo": "VWlogojpg.jpg"
     }
 ]
