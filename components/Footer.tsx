@@ -22,9 +22,7 @@ const Footer = () => {
                     </a>
                 </div>
                 <p className="text-gray-400 mt-4">Thanks for Exploring</p>
-                <span className="text-sm text-gray-400 block mt-2">
-                    © Ayush Hrishikesh Mishra. All Rights Reserved.
-                </span>
+                
             </div>
         </footer>
     );

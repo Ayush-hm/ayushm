@@ -1,51 +1,80 @@
-import React from 'react';
-import Image, { StaticImageData } from 'next/image';
+// Experience.tsx
+import React from "react";
+import Image, { StaticImageData } from "next/image";
+import { Building2, MapPin, Calendar1 } from "lucide-react";
 
 interface ExperienceProps {
     title: string;
     subtitle: string;
-    description: string;
+    description: string[];
+    location: string;
     logo?: string | StaticImageData;
     showLogo: boolean;
+    startDate: string;
+    endDate: string;
     isLast: boolean;
-    marginClass: string; // Add this prop
 }
 
 const Experience: React.FC<ExperienceProps> = ({
     title,
     subtitle,
     description,
+    location,
     logo,
     showLogo,
-    marginClass
+    startDate,
+    endDate,
 }) => {
     return (
-        <div className={`flex items-start relative justify-evenly w-max flex-grow ${marginClass}`}>
-            {/* Left Column: Logo */}
-            <div className="flex items-center justify-center w-1/4 relative z-10 mr-2 flex-1">
-                {showLogo && logo && (
-                    <div className="p-1 rounded-xl border-x-2 border-y-2 border-white-100 bg-[#01031a]">
-                        <Image
-                            src={logo}
-                            width={100}
-                            height={100}
-                            className="rounded-xl"
-                            alt="Company Logo"
-                        />
+        <div className="relative flex items-start w-full">
+            {/* Logo / Dot */}
+            {showLogo ? (
+                <div className="relative z-10">
+                    <div className="w-16 h-16 flex items-center justify-center rounded-xl border border-gray-600 bg-gradient-to-br from-gray-900 to-black shadow-md">
+                        {logo && (
+                            <Image
+                                src={logo}
+                                width={50}
+                                height={50}
+                                alt="Company Logo"
+                                className="object-contain rounded-md"
+                            />
+                        )}
                     </div>
-                )}
-            </div>
+                </div>
+            ) : (
+                <div className="w-16" />
+            )}
 
-            {/* Right Column: Experience Details */}
-            <div
-                className="w-full max-w-md p-6 flex-grow bg-white border border-gray-200 rounded-lg shadow
-                 hover:bg-gray-100 dark:bg-black-200 dark:border-gray-700 
-                 dark:hover:bg-black dark:hover:border-black">
-                <h5 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                    {title}
-                </h5>
-                <p className="font-normal text-gray-700 dark:text-gray-400">{subtitle}</p>
-                <p className="text-balance">{description}</p>
+            {/* Card */}
+            <div className="ml-6 flex-1 relative z-10">
+                <div className="p-4 bg-gradient-to-br from-gray-900 to-black rounded-2xl shadow-md hover:shadow-xl transition hover:scale-[1.02] border-b-2 border-white-100">
+                    <h3 className="text-xl font-bold text-white mb-1">{title}</h3>
+
+                    <div className="flex items-center gap-2 text-sm text-purple-300 mb-1">
+                        <Building2 size={16} />
+                        <span>{subtitle}</span>
+                    </div>
+
+                    <div className="flex items-center gap-6 text-xs text-gray-400 mb-3 flex-wrap md:flex-nowrap">
+                        {location && (
+                            <div className="flex items-center gap-1 whitespace-nowrap">
+                                <MapPin size={14} />
+                                <span>{location}</span>
+                            </div>
+                        )}
+                        <div className="flex items-center gap-1 whitespace-nowrap">
+                            <Calendar1 size={14} />
+                            <span>{startDate} - {endDate}</span>
+                        </div>
+                    </div>
+                    <ul className="list-disc list-inside text-gray-300 leading-1 justify-evenly text-md">
+                        {description.map((point, idx) => (
+                            <li key={idx}>{point}</li>
+                        ))}
+                    </ul>
+                    {/* <p className="text-gray-300 leading-relaxed">{description}</p> */}
+                </div>
             </div>
         </div>
     );

@@ -2,13 +2,33 @@
     {
         "title": "Software Engineer Trainee",
         "subtitle": "Volkswagen Group Technology Solutions India",
-        "description": "Developed chatbots leveraging Large Language Models (LLMs) to provide users with engaging and informative conversational experiences.",
-        "logo": "VWlogojpg.jpg"
+        "description":  [
+    "Built a Generative AI chatbot with LLMs for 5,000+ users, enabling context-aware conversations.",
+  "Processed 200 PDFs via AWS Textract and generated embeddings with BGE, stored in ChromaDB.",
+  "Integrated Hugging Face AutoModel and Llama tokenizer for custom LLM support.",
+  "Implemented MySQL-based feedback system to refine responses continuously.",
+  "Designed an interactive UI with citations, boosting engagement by 90%.",
+  "Received Innovation Award for contributions to the application’s success."
+],
+        "location":"Pune",
+        "startDate": "2023-12-31",
+        "endDate": "2024-06-30",
+        "logo": "/VWlogojpg.jpg"
     },
     {
         "title": "Software Engineer",
         "subtitle": "Volkswagen Group Technology Solutions India",
-        "description": "Spearheaded the organization of key company events, including hackathons and tech shows, fostering innovation among employees while showcasing cutting-edge technologies.",
-        "logo": "VWlogojpg.jpg"
+        "description": [
+    "Built an interactive RAG chatbot using Knowledge Graphs and GPT-4o mini (Azure OpenAI).",
+  "Developed PDF-to-Neo4j pipeline with domain ontology mapping. Integrated real-time Knowledge Graph visualization in the UI.",
+  "Added citations with similarity scores and source file previews.",
+  "Prototyped a multi-agent system with CrewAI for workflow automation.",
+  "Designed a manager agent to route tasks across tool-specific agents.",
+  "Explored integration of multi-agent systems into enterprise IT processes."
+],
+        "location":"Bengaluru",
+        "startDate": "2024-06-01",
+        "endDate": "Present",
+        "logo": "/VWlogojpg.jpg"
     }
 ]
