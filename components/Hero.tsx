@@ -15,9 +15,10 @@ const Hero = () => {
           fill="#6699CC"
         />
         <Spotlight
-          className="-top-40 -right-10 md:-right-32 md:-top-20 h-screen scale-x-[-1]"
-          fill="#6699CC"
+          className="h-[90vh] w-[40vw] top-20 left-full"
+          fill="purple"
         />
+        <Spotlight className="left-80 top-28 h-[80vh] w-[70vw]" fill="blue" />
       </div>
 
       
