@@ -10,9 +10,8 @@
         {"title": "Flask"},
         {"title": "FastAPI"},
         {"title": "SQL"},
-        {"title": "Azure AI Foundry"},
         {"title": "GraphQL"},
         {"title": "Agentic AI"},
-        {"title": "Crew.ai"}
-
+        {"title": "Crew.ai"},
+        {"title": "LangGraph"}
 ]

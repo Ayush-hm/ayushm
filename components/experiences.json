@@ -10,7 +10,7 @@
   "Designed an interactive UI with citations, boosting engagement by 90%.",
   "Received Innovation Award for contributions to the application’s success."
 ],
-        "location":"Pune",
+        "location":"Pune",          
         "startDate": "2023-12-31",
         "endDate": "2024-06-30",
         "logo": "VWlogojpg.jpg"
@@ -19,12 +19,15 @@
         "title": "Software Engineer",
         "subtitle": "Volkswagen Group Technology Solutions India",
         "description": [
-    "Built an interactive RAG chatbot using Knowledge Graphs and GPT-4o mini (Azure OpenAI).",
-  "Developed PDF-to-Neo4j pipeline with domain ontology mapping. Integrated real-time Knowledge Graph visualization in the UI.",
-  "Added citations with similarity scores and source file previews.",
-  "Prototyped a multi-agent system with CrewAI for workflow automation.",
-  "Designed a manager agent to route tasks across tool-specific agents.",
-  "Explored integration of multi-agent systems into enterprise IT processes."
+    "Implemented an end-to-end assistant to automate project scoping for 10+ business units, generating comprehensive PRDs from user requirements.",
+  "Migrated multi-agent orchestration from Langflow to LangGraph, implementing PostgreSQL for persistent inter-session memory and state management.",
+  "Optimized ingestion pipelines by parallelizing document extraction tasks, reducing total processing time by 62%.",
+  "Augmented Crew.ai workflow by integrating PostgreSQL memory to generate PRDs persisted to AWS S3, reducing manual drafting time by 90%.",
+  "Engineered asynchronous task distribution using AWS SQS and DLQs to ensure 100% reliability for over 50+ daily message transactions.",
+  "Developed a Graph-RAG platform using LLM pipelines and Neo4J, cutting project discovery time by 60%.",
+  "Integrated real-time Knowledge Graph visualization, allowing stakeholders to trace 10+ relationship types and accelerating decision-making by 25%.",
+  "Enhanced AI response trust with citations and similarity scoring, boosting user adoption by 40%.",
+  "Orchestrated a multi-agent system using Crew.ai and an LLM-based Manager Agent to automate IT workflows, resulting in a 35% reduction in manual coordination."
 ],
         "location":"Bengaluru",
         "startDate": "2024-06-01",
