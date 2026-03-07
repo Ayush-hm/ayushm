@@ -1,17 +1,37 @@
 [
-{"title": "Python"},
-        {"title": "JavaScript"},
-        {"title": "React.js"},
-        {"title": "Node.js"},
-        {"title": "MongoDB"},
-        {"title": "Machine Learning"},
-        {"title": "Deep Learning"},
-        {"title": "NLP"},
-        {"title": "Flask"},
-        {"title": "FastAPI"},
-        {"title": "SQL"},
-        {"title": "GraphQL"},
-        {"title": "Agentic AI"},
-        {"title": "Crew.ai"},
-        {"title": "LangGraph"}
+  {
+    "category": "Languages",
+    "skills": [
+      { "title": "Python" },
+      { "title": "JavaScript" },
+      { "title": "SQL" }
+    ]
+  },
+  {
+    "category": "Frameworks",
+    "skills": [
+      { "title": "React.js" },
+      { "title": "Node.js" },
+      { "title": "FastAPI" },
+      { "title": "Flask" }
+    ]
+  },
+  {
+    "category": "AI/ML",
+    "skills": [
+      { "title": "Machine Learning" },
+      { "title": "Deep Learning" },
+      { "title": "NLP" },
+      { "title": "Agentic AI" }
+    ]
+  },
+  {
+    "category": "Tooling",
+    "skills": [
+      { "title": "GraphQL" },
+      { "title": "MongoDB" },
+      { "title": "Crew.ai" },
+      { "title": "LangGraph" }
+    ]
+  }
 ]
