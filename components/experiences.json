@@ -25,8 +25,8 @@
     "Added PostgreSQL-backed memory to Crew.ai workflows for PRD generation and persistence to S3.",
     "Set up asynchronous task distribution with AWS SQS and DLQs, improving reliability for daily message processing.",
     "Developed a Graph-RAG platform with LLM pipelines and Neo4J, reducing project discovery time by 60%.",
-    "Integrated real-time Knowledge Graph visualization for tracing 10+ relationship types.",
-    "Added citations and similarity scoring to AI responses, increasing user adoption by 40%.",
+    "Integrated real-time Knowledge Graph visualization for tracing 10+ relationships.",
+    "Added citations and similarity score to AI responses, increasing user adoption by 40%.",
     "Built a multi-agent system with Crew.ai and an LLM Manager Agent to automate IT workflows."
 ],
         "location":"Bengaluru",
