@@ -1,7 +1,7 @@
 [
     {
         "title": "Software Engineer Trainee",
-        "subtitle": "Volkswagen Group Technology Solutions India",
+        "subtitle": "Volkswagen Group Digital Solutions [India]",
         "description":  [
     "Built a Generative AI chatbot with LLMs for 5,000+ users, enabling context-aware conversations.",
   "Processed 200 PDFs via AWS Textract and generated embeddings with BGE, stored in ChromaDB.",
@@ -17,17 +17,17 @@
     },
     {
         "title": "Software Engineer",
-        "subtitle": "Volkswagen Group Technology Solutions India",
+        "subtitle": "Volkswagen Group Digital Solutions [India]",
         "description": [
-    "Implemented an end-to-end assistant to automate project scoping for 10+ business units, generating comprehensive PRDs from user requirements.",
-  "Migrated multi-agent orchestration from Langflow to LangGraph, implementing PostgreSQL for persistent inter-session memory and state management.",
-  "Optimized ingestion pipelines by parallelizing document extraction tasks, reducing total processing time by 62%.",
-  "Augmented Crew.ai workflow by integrating PostgreSQL memory to generate PRDs persisted to AWS S3, reducing manual drafting time by 90%.",
-  "Engineered asynchronous task distribution using AWS SQS and DLQs to ensure 100% reliability for over 50+ daily message transactions.",
-  "Developed a Graph-RAG platform using LLM pipelines and Neo4J, cutting project discovery time by 60%.",
-  "Integrated real-time Knowledge Graph visualization, allowing stakeholders to trace 10+ relationship types and accelerating decision-making by 25%.",
-  "Enhanced AI response trust with citations and similarity scoring, boosting user adoption by 40%.",
-  "Orchestrated a multi-agent system using Crew.ai and an LLM-based Manager Agent to automate IT workflows, resulting in a 35% reduction in manual coordination."
+    "Built an end-to-end assistant to automate project scoping for 10+ business units, creating PRDs from user requirements.",
+    "Migrated multi-agent orchestration from Langflow to LangGraph, adding PostgreSQL for inter-session memory and state persistence.",
+    "Optimized ingestion pipelines by parallelizing document extraction, cutting processing time by 62%.",
+    "Added PostgreSQL-backed memory to Crew.ai workflows for PRD generation and persistence to S3.",
+    "Set up asynchronous task distribution with AWS SQS and DLQs, improving reliability for daily message processing.",
+    "Developed a Graph-RAG platform with LLM pipelines and Neo4J, reducing project discovery time by 60%.",
+    "Integrated real-time Knowledge Graph visualization for tracing 10+ relationship types.",
+    "Added citations and similarity scoring to AI responses, increasing user adoption by 40%.",
+    "Built a multi-agent system with Crew.ai and an LLM Manager Agent to automate IT workflows."
 ],
         "location":"Bengaluru",
         "startDate": "2024-06-01",
