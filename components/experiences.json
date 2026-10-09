@@ -27,14 +27,12 @@
     "Built a custom MLOps workflow covering data processing, model training, monitoring, and version management.",
 
     "Built an end-to-end assistant to automate project scoping for 10+ business units, creating PRDs from user requirements.",
+
     "Migrated multi-agent orchestration from Langflow to LangGraph with PostgreSQL-backed persistent memory and inter-session state, enabling high-concurrency enterprise workflows.",
+
     "Parallelized document extraction and ingestion pipelines, reducing processing latency by 62% for multi-document inputs.",
-    "Added PostgreSQL-backed memory to Crew.ai workflows for PRD generation and persistence to S3.",
-    "Set up asynchronous task distribution with AWS SQS and DLQs, improving reliability for daily message processing.",
-    "Developed a Graph-RAG platform with LLM pipelines and Neo4J, reducing project discovery time by 60%.",
-    "Integrated real-time Knowledge Graph visualization for tracing 10+ relationships.",
-    "Added citations and similarity score to AI responses, increasing user adoption by 40%.",
-    "Built a multi-agent system with Crew.ai and an LLM Manager Agent to automate IT workflows."
+    
+    "Set up asynchronous task distribution with AWS SQS and DLQs, improving reliability for daily message processing."
 ],
         "location":"Bengaluru",
         "startDate": "2024-06-01",
