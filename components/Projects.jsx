@@ -35,7 +35,7 @@ const Projects = () => {
     return (
         <div id="projects" className="w-full h-full pt-20">
             <h1 className="heading">My <span className="text-purple">Projects</span></h1>
-            <div className={styles.carouselContainer}>
+            <div className={`${styles.carouselContainer} mt-10`}>
                 <Carousel items={cards} />
             </div>
         </div>

@@ -6,6 +6,9 @@ import { FloatingNav } from './ui/FloatingNavbar'
 import ShimmerButton from './ui/ShimmerButton'
 
 const Hero = () => {
+  const resumeUrl = "/Ayush_Hrishikesh_Mishra_Resume.pdf";
+  const resumeName = "Ayush_Hrishikesh_Mishra_Resume.pdf";
+
   return (
 
     <div className="pb-20 pt-36">
@@ -34,22 +37,21 @@ const Hero = () => {
       </div>
 
       <div className="flex justify-center relative my-20 z-10">
-        <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-          <p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
-            Crafting Intelligent Solutions
-          </p>
-
-          
+        <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center gap-4">
           <TextGenerateEffect
-            words="Inventing the Future through Technological Excellence"
+            words="Hi! I'm Ayush Mishra"
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
           />
 
-          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hi! I&apos;m Ayush, a Software Developer.
+          <p className="uppercase tracking-widest text-md text-center text-blue-100 max-w-80">
+            Data Scientist & AI Engineer
           </p>
 
-          <a href="/Ayush_Hrishikesh_Mishra_Resume.pdf" download="Ayush_Hrishikesh_Mishra_Resume">
+          <p className="text-center md:tracking-wider text-sm md:text-md lg:text-xl">
+            Building intelligent LLM workflows and scalable AI-driven applications.
+          </p>
+
+          <a href={resumeUrl} download={resumeName}>
             <ShimmerButton
               title="Download my Resume"
               position="right" />

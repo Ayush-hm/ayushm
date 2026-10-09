@@ -68,7 +68,7 @@ const Experience: React.FC<ExperienceProps> = ({
                             <span>{startDate} - {endDate}</span>
                         </div>
                     </div>
-                    <ul className="list-disc list-inside text-gray-300 leading-1 justify-evenly text-md">
+                    <ul className="list-disc list-inside text-gray-300 leading-1 justify-evenly text-md space-y-4">
                         {description.map((point, idx) => (
                             <li key={idx}>{point}</li>
                         ))}

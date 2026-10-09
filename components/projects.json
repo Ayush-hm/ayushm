@@ -1,5 +1,19 @@
 [
     {
+        "category": "Agentic AI", 
+        "title": "OpenArchitect",
+        "imageUrl": "OpenArchitect.png",
+        "description": "AI-powered architecture review workspace that ingests software design documents and converts them into evidence-backed architecture findings, ADRs, and an evolved target-state design.​",
+        "githubLink": "https://github.com/Ayush-hm/OpenArchitect"
+    },
+    {
+        "category": "Augmented Reality", 
+        "title": "HoloDrive",
+        "imageUrl": "HoloDrive.png",
+        "description": "A futuristic AR based Car Dashboard.",
+        "githubLink": "https://github.com/Ayush-hm/HoloDrive"
+    },
+    {
         "category": "AI & Cognitive Assistance",
         "title": "Cognitive Assistance for Dementia Patients",
         "imageUrl":"SPOT.png",
@@ -20,12 +34,6 @@
         "description":
             "A wearable device that helps the visually impaired navigate their surroundings.",
         "githubLink": "https://github.com/Ayush-hm/nVision"
-    },
-    {
-        "category": "Augmented Reality", 
-        "title": "HoloDrive",
-        "imageUrl": "HoloDrive.png",
-        "description": "A futuristic AR based Car Dashboard.",
-        "githubLink": "https://github.com/Ayush-hm/HoloDrive"
     }
+  
 ]

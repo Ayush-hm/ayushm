@@ -14,7 +14,7 @@ const MyTimeline = () => {
                 My <span className="text-purple">Experience</span>
             </h1>
 
-            <div className="relative mt-12 flex flex-col gap-y-12 max-w-3xl mx-auto">
+            <div className="relative mt-10 flex flex-col gap-y-12 max-w-3xl mx-auto">
                 {/* 🔹 Continuous Vertical Line */}
                 <div className="absolute left-8 top-0 bottom-0 w-[3px] bg-gray-500" />
 

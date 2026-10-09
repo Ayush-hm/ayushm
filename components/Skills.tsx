@@ -8,14 +8,16 @@ import {
     SiReact, 
     SiNodedotjs, 
     SiMongodb, 
-    SiFlask, 
+    SiFlask,
+    SiPytorch, 
     SiFastapi, 
     SiPostgresql, 
     SiGraphql, 
-    SiCodefactor
+    SiCodefactor,
+    SiGit
 } from 'react-icons/si';
-import { SiLanggraph, SiCrewai } from '@icons-pack/react-simple-icons';
-
+import { SiLanggraph, SiCrewai, SiAmazonaws  } from '@icons-pack/react-simple-icons';
+import { FaAws } from "react-icons/fa";
 import { Brain, Zap, MessageSquare, Bot, Users } from 'lucide-react';
 
 const iconMap: { [key: string]: React.ComponentType<any> } = {
@@ -27,6 +29,7 @@ const iconMap: { [key: string]: React.ComponentType<any> } = {
     "Machine Learning": Brain,
     "Deep Learning": Zap,
     "NLP": MessageSquare,
+    "PyTorch": SiPytorch, 
     "Flask": SiFlask,
     "FastAPI": SiFastapi,
     "SQL": SiPostgresql,
@@ -34,6 +37,8 @@ const iconMap: { [key: string]: React.ComponentType<any> } = {
     "Agentic AI": Bot,
     "Crew.ai": SiCrewai,
     "LangGraph": SiLanggraph,
+    "AWS": FaAws,
+    "Git": SiGit
 };
 
 const Skills = () => {
@@ -45,7 +50,7 @@ const Skills = () => {
             whileInView={{ opacity: 1, y: 0, transition: { duration: 1.5 } }}
             viewport={{ once: true }}
         >
-            <h1 className="heading mb-20">
+            <h1 className="heading mb-10">
                 Technical <span className="text-purple">Skills</span>
             </h1>
 

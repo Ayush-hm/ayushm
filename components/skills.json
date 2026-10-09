@@ -22,16 +22,19 @@
       { "title": "Machine Learning" },
       { "title": "Deep Learning" },
       { "title": "NLP" },
-      { "title": "Agentic AI" }
+      { "title": "Agentic AI" },
+      { "title": "PyTorch" }
     ]
   },
   {
-    "category": "Tooling",
+    "category": "Cloud & Tools",
     "skills": [
       { "title": "GraphQL" },
       { "title": "MongoDB" },
       { "title": "Crew.ai" },
-      { "title": "LangGraph" }
+      { "title": "LangGraph" },
+      { "title": "AWS" },
+      { "title": "Git" }
     ]
   }
 ]

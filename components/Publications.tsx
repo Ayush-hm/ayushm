@@ -23,7 +23,7 @@
 
                 <div className="flex justify-center mt-10">
                     {publications.map((pub) => (
-                        <CardContainer key={pub.id} className="inter-var">
+                        <CardContainer key={pub.id} className="inter-var" containerClassName="py-0">
                             <CardBody className="bg-gradient-to-r from-blue-900 via-black to-black text-white rounded-xl p-6 w-auto sm:w-[30rem] border border-blue-500/30 shadow-lg">
                                 <CardItem translateZ="50" className="text-xl font-bold text-neutral-800 dark:text-white">
                                     {pub.title}
