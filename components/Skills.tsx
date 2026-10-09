@@ -16,7 +16,7 @@ import {
     SiCodefactor,
     SiGit
 } from 'react-icons/si';
-import { SiLanggraph, SiCrewai, SiAmazonaws  } from '@icons-pack/react-simple-icons';
+import { SiLanggraph, SiCrewai  } from '@icons-pack/react-simple-icons';
 import { FaAws } from "react-icons/fa";
 import { Brain, Zap, MessageSquare, Bot, Users } from 'lucide-react';
 
