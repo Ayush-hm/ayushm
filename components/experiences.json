@@ -1,42 +1,32 @@
 [
-    {
-        "title": "Software Engineer Trainee",
-        "subtitle": "Volkswagen Group Digital Solutions [India]",
-        "description":  [
-    "Built a Generative AI chatbot with LLMs for 5,000+ users, enabling context-aware conversations.",
-  "Developed a data pipeline to extract, transform, and process 200+ unstructured PDF documents using AWS Textract",
-  "Integrated Hugging Face AutoModel and Llama tokenizer for custom LLM support.",
-  "Implemented SQL-based logging and human-feedback capture to analyze model behavior and continuously improve system performance.",
-  "Developed a React.js interface with conversation history, source citations, and confidence indicators, increasing user engagement by 90%."
-],
-        "location":"Pune",          
-        "startDate": "2023-12-31",
-        "endDate": "2024-06-30",
-        "logo": "VWlogojpg.jpg"
-    },
-    {
-        "title": "Software Engineer",
-        "subtitle": "Volkswagen Group Digital Solutions [India]",
-        "description": [
-    "Architected a Financial Liquidity Forecasting system, engineering ETL pipelines over 50,000+ SAP records to predict customer payment.",
-
-    "Benchmarked various ML algorithms including XGBoost and LightGBM to model non-linear payment patterns and seasonal trends.",
-
-    "Reduced manual forecasting overhead significantly by transforming raw accounts receivable data into structured, decision-ready insights.",
-
-    "Built a custom MLOps workflow covering data processing, model training, monitoring, and version management.",
-
-    "Built an end-to-end assistant to automate project scoping for 10+ business units, creating PRDs from user requirements.",
-
-    "Migrated multi-agent orchestration from Langflow to LangGraph with PostgreSQL-backed persistent memory and inter-session state, enabling high-concurrency enterprise workflows.",
-
-    "Parallelized document extraction and ingestion pipelines, reducing processing latency by 62% for multi-document inputs.",
-    
-    "Set up asynchronous task distribution with AWS SQS and DLQs, improving reliability for daily message processing."
-],
-        "location":"Bengaluru",
-        "startDate": "2024-06-01",
-        "endDate": "Present",
-        "logo": "VWlogojpg.jpg"
-    }
+  {
+    "title": "Software Engineer Trainee",
+    "subtitle": "Volkswagen Group Digital Solutions [India]",
+    "description": [
+      "Built a context-aware Generative AI chatbot serving 5,000+ users, integrating Hugging Face AutoModel and Llama tokenizer.",
+      "Engineered an automated data pipeline using AWS Textract to extract, transform, and process 200+ unstructured PDF documents for downstream AI workflows.",
+      "Developed a React.js interface with citations and confidence metrics—boosting user engagement by 90%",
+      "Implemented SQL-based logging with human feedback capture for continuous model evaluation."
+    ],
+    "location": "Pune",
+    "startDate": "Dec 2023",
+    "endDate": "Jun 2024",
+    "logo": "VWlogojpg.jpg"
+  },
+  {
+    "title": "Software Engineer",
+    "subtitle": "Volkswagen Group Digital Solutions [India]",
+    "description": [
+        "Designed an AWS-based architecture to unify enterprise data using knowledge graphs and semantic federation.",
+        "Built Python ETL pipelines over Amazon RDS and Amazon Neptune to automate schema discovery, entity mapping, and ontology generation.",
+      "Forecasted liquidity from 50k+ SAP records using XGBoost and LightGBM models using temporal customer features.", 
+      "Built a custom MLOps pipeline on ECS and S3 for model evaluation, retraining and deployment.",
+      "Automated PRD scoping for 10+ business units with LangGraph and PostgreSQL-backed memory.",
+      "Parallelized document processing using AWS SQS, cutting multi-document latency by 62%."
+    ],
+    "location": "Bengaluru",
+    "startDate": "Jul 2024",
+    "endDate": "Present",
+    "logo": "VWlogojpg.jpg"
+  }
 ]

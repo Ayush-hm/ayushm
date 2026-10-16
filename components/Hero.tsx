@@ -1,9 +1,9 @@
 "use client";
 import React from 'react'
 import { Spotlight } from './ui/Spotlight'
-import { TextGenerateEffect } from './ui/text-generate-effect'
 import { FloatingNav } from './ui/FloatingNavbar'
 import ShimmerButton from './ui/ShimmerButton'
+import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa'
 
 const Hero = () => {
   const resumeUrl = "/Ayush_Hrishikesh_Mishra_Resume.pdf";
@@ -38,10 +38,9 @@ const Hero = () => {
 
       <div className="flex justify-center relative my-20 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center gap-4">
-          <TextGenerateEffect
-            words="Hi! I'm Ayush Mishra"
-            className="text-center text-[40px] md:text-5xl lg:text-6xl"
-          />
+          <h1 className="text-center text-[40px] font-bold md:text-5xl lg:text-6xl">
+            <span className="whitespace-nowrap text-[clamp(1.5rem,8vw,1em)] text-purple drop-shadow-[0_0_2px_rgba(168,85,247,0.55)]">Ayush Hrishikesh Mishra</span>
+          </h1>
 
           <p className="uppercase tracking-widest text-md text-center text-blue-100 max-w-80">
             Data Scientist & AI Engineer
@@ -56,6 +55,34 @@ const Hero = () => {
               title="Download my Resume"
               position="right" />
           </a>
+
+          <div className="mt-2 flex flex-wrap justify-center gap-3">
+            <a
+              href="https://www.linkedin.com/in/ayush-h-mishra/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-full border border-purple-400/40 bg-purple-500/10 px-4 py-2 text-sm font-medium text-purple-100 transition-colors hover:border-purple-300 hover:bg-purple-500/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-400"
+            >
+              <FaLinkedin aria-hidden="true" />
+              LinkedIn
+            </a>
+            <a
+              href="mailto:h.ayushm@gmail.com"
+              className="inline-flex items-center gap-2 rounded-full border border-purple-400/40 bg-purple-500/10 px-4 py-2 text-sm font-medium text-purple-100 transition-colors hover:border-purple-300 hover:bg-purple-500/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-400"
+            >
+              <FaEnvelope aria-hidden="true" />
+              Email
+            </a>
+            <a
+              href="https://github.com/Ayush-hm"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-full border border-purple-400/40 bg-purple-500/10 px-4 py-2 text-sm font-medium text-purple-100 transition-colors hover:border-purple-300 hover:bg-purple-500/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-400"
+            >
+              <FaGithub aria-hidden="true" />
+              GitHub
+            </a>
+          </div>
         </div>
       </div>
     </div>

@@ -1,7 +1,7 @@
 // Experience.tsx
 import React from "react";
 import Image, { StaticImageData } from "next/image";
-import { Building2, MapPin, Calendar1 } from "lucide-react";
+import { Building2, MapPin } from "lucide-react";
 
 interface ExperienceProps {
     title: string;
@@ -12,7 +12,6 @@ interface ExperienceProps {
     showLogo: boolean;
     startDate: string;
     endDate: string;
-    isLast: boolean;
 }
 
 const Experience: React.FC<ExperienceProps> = ({
@@ -26,57 +25,64 @@ const Experience: React.FC<ExperienceProps> = ({
     endDate,
 }) => {
     return (
-        <div className="relative flex items-start w-full">
-            {/* Logo / Dot */}
+        <article className="relative flex w-full items-start">
             {showLogo ? (
-                <div className="relative z-10">
-                    <div className="w-16 h-16 flex items-center justify-center rounded-xl border border-gray-600 bg-gradient-to-br from-gray-900 to-black shadow-md">
+                <div className="relative z-10 shrink-0">
+                    <div className="flex h-14 w-14 items-center justify-center rounded-2xl border border-purple-300/20 bg-[#111323] shadow-[0_0_24px_rgba(139,92,246,0.14)] ring-4 ring-[#080a18] sm:h-16 sm:w-16">
                         {logo && (
                             <Image
                                 src={logo}
-                                width={50}
-                                height={50}
-                                alt="Company Logo"
-                                className="object-contain rounded-md"
+                                width={42}
+                                height={42}
+                                alt={`${subtitle} logo`}
+                                className="rounded-md object-contain"
                             />
                         )}
                     </div>
                 </div>
             ) : (
-                <div className="w-16" />
+                <div className="h-14 w-14 shrink-0 sm:h-16 sm:w-16" aria-hidden="true" />
             )}
 
-            {/* Card */}
-            <div className="ml-6 flex-1 relative z-10">
-                <div className="p-4 bg-gradient-to-br from-gray-900 to-black rounded-2xl shadow-md hover:shadow-xl transition hover:scale-[1.02] border-b-2 border-white-100">
-                    <h3 className="text-xl font-bold text-white mb-1">{title}</h3>
+            <div className="relative z-10 ml-4 min-w-0 flex-1 sm:ml-7">
+                <div className="relative overflow-hidden rounded-2xl border border-white/15 bg-gradient-to-br from-[#2c1947] via-[#0c041d] to-[#000000] p-5 shadow-[0_16px_50px_rgba(0,0,0,0.22)] sm:p-7">
+                    <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-purple-200 to-transparent" />
+                    <div className="mb-2.5 flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
+                        <div className="min-w-0">
+                            <h3 className="text-lg font-semibold leading-snug tracking-[-0.02em] text-white sm:text-xl">{title}</h3>
 
-                    <div className="flex items-center gap-2 text-sm text-purple-300 mb-1">
-                        <Building2 size={16} />
-                        <span>{subtitle}</span>
+                            <div className="mt-2.5 flex items-start gap-2 text-sm text-purple-200/90">
+                                <Building2 size={15} className="mt-0.5 shrink-0 text-purple-300" />
+                                <span className="leading-5">{subtitle}</span>
+                            </div>
+                        </div>
+
+                        <span className="flex w-fit shrink-0 items-center gap-2 rounded-full border border-purple-300/15 bg-purple-300/[0.07] px-3 py-1.5 text-[11px] font-medium tracking-wide text-purple-100 sm:text-xs">
+                            {endDate.toLowerCase() === "present" && <span className="h-1.5 w-1.5 rounded-full bg-emerald-300 shadow-[0_0_8px_rgba(110,231,183,0.7)]" aria-hidden="true" />}
+                            {startDate} <span className="text-purple-300/60">-</span> {endDate}
+                        </span>
                     </div>
 
-                    <div className="flex items-center gap-6 text-xs text-gray-400 mb-3 flex-wrap md:flex-nowrap">
+                    <div className="mb-5 flex flex-wrap items-center gap-x-5 gap-y-2 text-xs text-gray-400">
                         {location && (
-                            <div className="flex items-center gap-1 whitespace-nowrap">
-                                <MapPin size={14} />
+                            <div className="flex items-center gap-1.5">
+                                <MapPin size={14} className="text-purple-300/80" />
                                 <span>{location}</span>
                             </div>
                         )}
-                        <div className="flex items-center gap-1 whitespace-nowrap">
-                            <Calendar1 size={14} />
-                            <span>{startDate} - {endDate}</span>
-                        </div>
                     </div>
-                    <ul className="list-disc list-inside text-gray-300 leading-1 justify-evenly text-md space-y-4">
+
+                    <ul className="space-y-2.5 border-t border-purple-200/50 pt-5 text-sm leading-relaxed text-gray-300 sm:text-[15px]">
                         {description.map((point, idx) => (
-                            <li key={idx}>{point}</li>
+                            <li key={idx} className="flex gap-3">
+                                <span className="shrink-0 font-bold text-purple-100 drop-shadow-[0_0_15px_rgba(203,172,249,1)] brightness-125" aria-hidden="true">—</span>
+                                <span className="text-white/75 font-medium">{point}</span>
+                            </li>
                         ))}
                     </ul>
-                    {/* <p className="text-gray-300 leading-relaxed">{description}</p> */}
                 </div>
             </div>
-        </div>
+        </article>
     );
 };
 
